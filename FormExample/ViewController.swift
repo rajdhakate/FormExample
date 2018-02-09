@@ -37,11 +37,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let field = tableView.dequeueReusableCell(withIdentifier: ViewController.cellIdentifier, for: indexPath) as! TextField
-//        field.showRightIcon = true
-//        field.rightIconSize = 20
-        field.lineCustomColor = .red
-        field.button.setTitle("Reload", for: .normal)
-        field.buttonAlignment = .left
+        field.fieldHeight = 40
+//        field.lineCustomColor = .red
+//        field.button.setTitle("Reload", for: .normal)
+//        field.buttonAlignment = .left
         return field
     }
 }

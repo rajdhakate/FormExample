@@ -88,7 +88,7 @@
                 <outlet property="button" destination="qTA-US-OmY" id="NED-CB-1Qd"/>
                 <outlet property="buttonHeight" destination="aEN-Ek-WX6" id="0pY-SM-Jt8"/>
                 <outlet property="field" destination="xye-Al-mp0" id="OMj-J9-T61"/>
-                <outlet property="fieldHeight" destination="eod-Wg-xuz" id="Qfm-9O-t6H"/>
+                <outlet property="fieldHeightConstraint" destination="eod-Wg-xuz" id="QO8-Tc-gfG"/>
                 <outlet property="fieldLeftSpace" destination="Iy4-zE-AyN" id="TsA-5e-Dce"/>
                 <outlet property="fieldRightSpace" destination="7QH-TO-HY5" id="H6G-BE-Shl"/>
                 <outlet property="leftIcon" destination="2Xb-JZ-QB9" id="Gfy-uT-wWi"/>
