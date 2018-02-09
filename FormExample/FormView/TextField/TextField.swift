@@ -27,6 +27,10 @@ class TextField: UITableViewCell {
             if showLeftIcon == false {
                 leftIconWidthConstraint.constant = 0
                 fieldLeftSpace.constant = 0
+            } else {
+                leftIconWidthConstraint.constant = leftIconSize
+                leftIconHeightConstraint.constant = leftIconSize
+                fieldLeftSpace.constant = 8
             }
         }
     }
@@ -36,6 +40,10 @@ class TextField: UITableViewCell {
             if  showRightIcon == false {
                 rightIconWidthConstraint.constant = 0
                 fieldRightSpace.constant = 0
+            } else {
+                rightIconWidthConstraint.constant = rightIconSize
+                rightIconHeightConstraint.constant = rightIconSize
+                fieldRightSpace.constant = 8
             }
         }
     }
@@ -115,7 +123,6 @@ class TextField: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         field.textAlignment = fieldAlignment
         button.contentHorizontalAlignment = buttonAlignment
@@ -137,11 +144,4 @@ class TextField: UITableViewCell {
         }
         
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

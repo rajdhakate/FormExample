@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let nib = UINib(nibName: "TextField", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: ViewController.cellIdentifier)
@@ -38,16 +37,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let field = tableView.dequeueReusableCell(withIdentifier: ViewController.cellIdentifier, for: indexPath) as! TextField
-        field.showLeftIcon = true
-        field.leftIconSize = 20
+//        field.showRightIcon = true
+//        field.rightIconSize = 20
         field.lineCustomColor = .red
         field.button.setTitle("Reload", for: .normal)
+        field.buttonAlignment = .left
         return field
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
